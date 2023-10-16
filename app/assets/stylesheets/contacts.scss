@@ -1,0 +1,20 @@
+
+#contacts {
+  display: flex;
+  width: 100%;
+  max-width: 600px;
+  margin: 40px auto;
+  justify-content: space-around;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  transition: all 0.2s ease-out;
+}
+
+.icon:hover {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}

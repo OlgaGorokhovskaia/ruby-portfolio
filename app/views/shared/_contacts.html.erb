@@ -1,0 +1,8 @@
+<%= stylesheet_link_tag "contacts" %>
+<div id='contacts'>
+    <% @contacts.each do |contact| %>
+        <div class='item'>
+            <%= image_tag(contact.image, :class => "icon", :alt => contact.image) %>
+        </div>
+    <% end %>
+</div>

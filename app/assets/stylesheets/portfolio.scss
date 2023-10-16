@@ -1,0 +1,46 @@
+.items {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-around;
+
+  .item {
+    position: relative;
+    max-width: 560px;
+    max-height: 300px;
+    width: calc(50% - 40px);
+    height: auto;
+    display: block;
+    margin: 0 20px 40px;
+    text-decoration: none;
+    transition-duration: 0.3s;
+    overflow: hidden;
+    
+    .image {
+      width: -webkit-fill-available;
+      height: -webkit-fill-available;
+      filter: contrast(0.75);
+      transition-duration: 0.3s;
+    }
+
+    .title {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: 0;
+      padding: 10px;
+      background-color: #171717bd;
+      color: #fff;
+    }
+
+    &:hover {
+      filter: drop-shadow(2px 4px 6px black);
+      .image {
+        filter: none;
+      }
+    }
+  }
+}

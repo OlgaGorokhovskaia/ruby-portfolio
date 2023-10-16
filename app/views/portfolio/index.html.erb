@@ -1,0 +1,12 @@
+<%= stylesheet_link_tag "portfolio" %>
+<div id='main'>
+  <h2>My projects</h2>
+  <div class='items'>
+    <% @projects.each do |project| %>
+      <%= link_to project.link, class: 'item', target: :_blank do %>
+        <%= image_tag project.image, class: 'image', alt: "project preview" %>  
+        <p class='title'><%= project.title %></p>
+      <% end %>
+    <% end %>
+  </div>
+</div>

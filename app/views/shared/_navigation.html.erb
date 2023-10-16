@@ -1,0 +1,17 @@
+<%= stylesheet_link_tag "navigation" %>
+<nav>
+    <ul id='navigation'>
+        <li class='link'>
+            <%= link_to_unless_current 'Home', '/'  %>
+        </li>
+        <li class='link'>
+            <%= link_to_unless_current 'About', '/about' %>
+        </li>
+        <li class='link'>
+            <%= link_to_unless_current 'Projects', '/portfolio'  %>
+        </li>
+        <li class='link'>
+            <%= link_to 'Contacts', '#contacts' %>
+        </li>
+    </ul>
+</nav>
